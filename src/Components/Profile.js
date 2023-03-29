@@ -1,17 +1,22 @@
 import card from "../Images/card.svg";
-import { StyledDiv, StyledImg } from "./StyledComponents";
+import {
+  RowDiv,
+  StyledDiv,
+  StyledImg,
+  StyledSection,
+} from "./StyledComponents";
 export const Profile = () => {
   return (
-    <section>
+    <StyledSection>
       <StyledDiv>
         <StyledImg src={card} />
         <div>
-          <div>
+          <RowDiv>
             <h1>Victor Crest</h1>
             <p>26</p>
-          </div>
+          </RowDiv>
           <p>London</p>
-          <div>
+          <RowDiv>
             <div>
               <p>80K</p>
               <p>Followers</p>
@@ -24,9 +29,9 @@ export const Profile = () => {
               <p>1.4K</p>
               <p>Photos</p>
             </div>
-          </div>
+          </RowDiv>
         </div>
       </StyledDiv>
-    </section>
+    </StyledSection>
   );
 };

@@ -7,3 +7,15 @@ export const StyledDiv = styled.div`
 export const StyledImg = styled.img`
   width: 100%;
 `;
+
+export const StyledSection = styled.section`
+  display: flex;
+  justify-content: center;
+`;
+
+export const RowDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+`;
