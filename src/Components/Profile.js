@@ -16,7 +16,7 @@ export const Profile = () => {
             <p>26</p>
           </RowDiv>
           <p>London</p>
-          <RowDiv>
+          <RowDiv border>
             <div>
               <p>80K</p>
               <p>Followers</p>

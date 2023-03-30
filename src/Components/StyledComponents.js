@@ -18,4 +18,10 @@ export const RowDiv = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1em;
+  ${(props) => {
+    if (props.border)
+      return `
+      border-top: 1px solid black;
+    `;
+  }}
 `;
