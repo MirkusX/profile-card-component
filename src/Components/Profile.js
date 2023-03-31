@@ -1,8 +1,12 @@
 import card from "../Images/card.svg";
+import victor from "../Images/victor.jpg";
+
 import {
   RowDiv,
   StyledDiv,
+  StyledH1,
   StyledImg,
+  StyledP,
   StyledSection,
 } from "./StyledComponents";
 export const Profile = () => {
@@ -10,12 +14,13 @@ export const Profile = () => {
     <StyledSection>
       <StyledDiv>
         <StyledImg src={card} />
+        <StyledImg profile src={victor} />
         <div>
           <RowDiv>
-            <h1>Victor Crest</h1>
+            <StyledH1>Victor Crest</StyledH1>
             <p>26</p>
           </RowDiv>
-          <p>London</p>
+          <StyledP>London</StyledP>
           <RowDiv border>
             <div>
               <p>80K</p>
