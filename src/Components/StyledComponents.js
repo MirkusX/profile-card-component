@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import bottom from "../Images/bottom.svg";
+import top from "../Images/top.svg";
 
 export const StyledDiv = styled.div`
   width: 25%;
   position: relative;
+  background-color: white;
+  border-radius: 10px;
 `;
 
 export const StyledImg = styled.img`
   width: 100%;
+  border-radius: 10px 10px 0 0;
   ${(props) => {
     if (props.profile)
       return `
@@ -25,6 +30,9 @@ export const StyledImg = styled.img`
 export const StyledSection = styled.section`
   display: flex;
   justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: url(${top});
 `;
 
 export const RowDiv = styled.div`
@@ -36,7 +44,7 @@ export const RowDiv = styled.div`
   ${(props) => {
     if (props.border)
       return `
-      border-top: 1px solid black;
+      border-top: 1px solid gray;
       margin-top: 0;
       justify-content: space-around;
     `;
