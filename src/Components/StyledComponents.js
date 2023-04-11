@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import bottom from "../Images/bottom.svg";
 import top from "../Images/top.svg";
 
 export const StyledDiv = styled.div`
@@ -7,6 +6,12 @@ export const StyledDiv = styled.div`
   position: relative;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  @media (max-width: 811px) {
+    width: 80%;
+  }
 `;
 
 export const StyledImg = styled.img`
@@ -57,4 +62,10 @@ export const StyledH1 = styled.h1`
 
 export const StyledP = styled.p`
   margin-top: 0;
+  ${(props) => {
+    if (props.small)
+      return `
+    font-size: 0.7rem;
+    color: gray;`;
+  }}
 `;

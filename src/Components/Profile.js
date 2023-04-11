@@ -24,15 +24,15 @@ export const Profile = () => {
           <RowDiv border>
             <div>
               <p>80K</p>
-              <p>Followers</p>
+              <StyledP small>Followers</StyledP>
             </div>
             <div>
               <p>803K</p>
-              <p>Likes</p>
+              <StyledP small>Likes</StyledP>
             </div>
             <div>
               <p>1.4K</p>
-              <p>Photos</p>
+              <StyledP small>Photos</StyledP>
             </div>
           </RowDiv>
         </div>
