@@ -2,6 +2,7 @@ import card from "../Images/card.svg";
 import victor from "../Images/victor.jpg";
 
 import {
+  GrayNum,
   RowDiv,
   StyledDiv,
   StyledH1,
@@ -18,20 +19,20 @@ export const Profile = () => {
         <div>
           <RowDiv>
             <StyledH1>Victor Crest</StyledH1>
-            <p>26</p>
+            <GrayNum>26</GrayNum>
           </RowDiv>
-          <StyledP>London</StyledP>
+          <StyledP gray>London</StyledP>
           <RowDiv border>
             <div>
-              <p>80K</p>
+              <StyledP noMarginBottom>80K</StyledP>
               <StyledP small>Followers</StyledP>
             </div>
             <div>
-              <p>803K</p>
+              <StyledP noMarginBottom>803K</StyledP>
               <StyledP small>Likes</StyledP>
             </div>
             <div>
-              <p>1.4K</p>
+              <StyledP noMarginBottom>1.4K</StyledP>
               <StyledP small>Photos</StyledP>
             </div>
           </RowDiv>

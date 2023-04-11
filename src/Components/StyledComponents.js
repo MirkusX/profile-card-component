@@ -26,7 +26,7 @@ export const StyledImg = styled.img`
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: 50%;
+    bottom: 45%;
     border: 5px solid white;
     `;
   }}
@@ -68,4 +68,19 @@ export const StyledP = styled.p`
     font-size: 0.7rem;
     color: gray;`;
   }}
+  ${(props) => {
+    if (props.gray)
+      return `
+    color: gray;`;
+  }}
+  ${(props) => {
+    if (props.noMarginBottom)
+      return `
+    margin-bottom: 0;
+    margin-top: 1.5em;`;
+  }}
+`;
+
+export const GrayNum = styled.p`
+  color: gray;
 `;
